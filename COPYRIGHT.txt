@@ -1,0 +1,11 @@
+WebEditorWeb
+(c) Copyright 2020~ Marcos Morise. Todos os direitos reservados
+Criado por Marcos Morise
+
+Mantido pelo Projeto SoLUC - Software Livre Unindo Conhecimento
+
+site: http://soluc.org
+contato: org.soluc@gmail.com
+
+CodeMirror under MIT License
+gnome-icons under GNU General Public License

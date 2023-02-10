@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--
+WebEditorWeb
+-->
+<html>
+    <head>
+        <title>WEW</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta name="keywords" content="wew, web editor web, code editor, soluc.org, soluc"/>
+        <meta name="description" content="WEW - Web Editor Web - SoLUC.org"/>
+        
+        <link href="img/wew.png" rel="shortcut icon"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+        <link href="lib/codemirror/lib/codemirror.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/addon/lint/lint.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/3024-day.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/3024-night.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/abcdef.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/ambiance.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/ambiance-mobile.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/base16-dark.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/base16-light.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/bespin.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/blackboard.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/cobalt.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/colorforth.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/darcula.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/dracula.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/duotone-dark.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/duotone-light.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/eclipse.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/elegant.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/erlang-dark.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/gruvbox-dark.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/hopscotch.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/icecoder.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/idea.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/isotope.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/lesser-dark.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/liquibyte.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/lucario.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/material.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/mbo.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/mdn-like.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/midnight.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/monokai.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/neat.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/neo.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/night.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/nord.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/oceanic-next.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/panda-syntax.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/paraiso-dark.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/paraiso-light.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/pastel-on-dark.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/railscasts.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/rubyblue.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/seti.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/shadowfox.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/solarized.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/ssms.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/the-matrix.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/tomorrow-night-bright.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/tomorrow-night-eighties.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/ttcn.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/twilight.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/vibrant-ink.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/xq-dark.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/xq-light.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/yeti.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/yonce.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/theme/zenburn.css" rel="stylesheet" type="text/css"/>
+
+        <link href="lib/codemirror/addon/fold/foldgutter.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/addon/hint/show-hint.css" rel="stylesheet" type="text/css"/>        
+
+        <link href="lib/codemirror/addon/dialog/dialog.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/codemirror/addon/search/matchesonscrollbar.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <div id="wew">
+            <!-- Button Menu -->
+            <button id="wew_ButtonMenu" onclick="wew.showMenu();" title="Show menu (F10)">◂</button>
+            <!-- Menu -->
+            <div id="wew_Menu" onclick="wew.editor.focus();">
+                <table width="100%" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td style="text-align:left;">
+                            <button onclick="wew.newHTML();" title="New file (Ctrl+Alt+N)">
+                                <img id="wew_newImg" src="img/Page-White.png" alt="New" draggable="false" class="wew_ImgMenu"/>
+                            </button>
+                            <button onclick="document.querySelector('#wew_OpenFile').click()" title="Open file (Ctrl+O)">
+                                <img src="img/Folder.png" alt="Open" draggable="false" class="wew_ImgMenu"/>
+                            </button>
+                            <input id="wew_OpenFile" type="file" onchange="wew.openHTML()" accept=".html,.js,.css,.xml,.json,.txt" hidden/>
+                            <button onclick="wew.saveHTML();" title="Save file (Ctrl+S)">
+                                <img id="wew_saveImg" src="img/Disk.png" alt="Save" draggable="false" class="wew_ImgMenu"/>
+                            </button>
+                            &nbsp;
+                        </td>
+                        <td style="text-align:center;">
+                            <button onclick="wew.openRenameDialog();" id="wew_Filename" title="Rename file (F2)"></button>
+                            <button onclick="wew.formatCode()" title="Format selected code (Alt+Shift+F)">
+                                <img src="img/Page-White-Lightning.png" alt="Format code" draggable="false" class="wew_ImgMenu"/>
+                            </button>
+                            <button onclick="wew.runHTML();" id="wew_ButtonRun" title="Run HTML code (F9)">
+                                <img src="img/Run.png" alt="Run" draggable="false" class="wew_ImgMenu"/>
+                            </button>
+                        </td>
+                        <td style="text-align:right;">
+                            &nbsp;
+                            <button onclick="wew.openConfigDialog();" title="Options (F9)">
+                                <img id="wew_configImg" src="img/Cog.png" alt="Config" draggable="false" class="wew_ImgMenu"/>
+                            </button>
+                            <button onclick="wew.openHelpDialog();" title="Help (F1)">
+                                <img id="wew_helpImg" src="img/Help.png" alt="Help" draggable="false" class="wew_ImgMenu"/>
+                            </button>
+                            <button onclick="wew.openAboutDialog();" title="About">
+                                <img src="img/Information.png" alt="About" draggable="false" class="wew_ImgMenu"/>
+                            </button>
+                            &nbsp;
+                            <button id="wew_ButtonHideMenu" onclick="wew.hideMenu();" title="Hide menu (F10)">▸</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- Brackets Keyboard -->
+            <div id="wew_Keys" onclick="wew.editor.focus();">
+                <button class="wew_BracketsKb" onclick="wew.editor.showHint();wew.editor.focus();">...</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb('{')">{</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb('}')">}</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb('[')">[</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb(']')">]</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb('(')">(</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb(')')">)</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb('<')"><</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb('>')">></button>
+                <button class="wew_BracketsKb" onclick='wew.onClickBracketsKb("/")'>/</button>
+                <button class="wew_BracketsKb" onclick='wew.onClickBracketsKb("\\")'>\</button>
+                <button class="wew_BracketsKb" onclick='wew.onClickBracketsKb("\"")'>"</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb('\'')">'</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb('.')">.</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb(',')">,</button>
+                <button class="wew_BracketsKb" onclick="wew.onClickBracketsKb(';')">;</button>
+            </div>
+            
+            <!-- Codemirror Editor -->
+            <textarea id="wew_Editor"></textarea>
+        </div>
+
+        <script src="lib/codemirror/lib/codemirror.js"></script>
+        <script src="lib/codemirror/mode/xml/xml.js"></script>
+        <script src="lib/codemirror/mode/javascript/javascript.js"></script>
+        <script src="lib/codemirror/mode/css/css.js"></script>
+        <script src="lib/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+        <script src="lib/codemirror/addon/selection/active-line.js"></script>
+        <script src="lib/codemirror/addon/edit/matchbrackets.js"></script>
+        <script src="lib/codemirror/addon/edit/matchtags.js"></script>
+        <script src="lib/codemirror/addon/edit/closebrackets.js"></script>
+        <script src="lib/codemirror/addon/edit/closetag.js"></script>
+        <script src="lib/codemirror/addon/edit/formatting.js"></script>
+        <script src="lib/codemirror/addon/display/panel.js"></script>
+
+        <script src="lib/codemirror/addon/fold/foldcode.js"></script>
+        <script src="lib/codemirror/addon/fold/foldgutter.js"></script>
+        <script src="lib/codemirror/addon/fold/comment-fold.js"></script>
+        <script src="lib/codemirror/addon/fold/brace-fold.js"></script>
+        <script src="lib/codemirror/addon/fold/indent-fold.js"></script>
+        <script src="lib/codemirror/addon/fold/xml-fold.js"></script>
+
+        <script src="lib/codemirror/addon/hint/show-hint.js"></script>
+        <script src="lib/codemirror/addon/hint/anyword-hint.js"></script>
+        <script src="lib/codemirror/addon/hint/xml-hint.js"></script>
+        <script src="lib/codemirror/addon/hint/javascript-hint.js"></script>
+        <script src="lib/codemirror/addon/hint/css-hint.js"></script>
+        <script src="lib/codemirror/addon/hint/html-hint.js"></script>
+        
+        <script src="https://unpkg.com/jshint@2.13.2/dist/jshint.js"></script>
+        <script src="https://unpkg.com/jsonlint@1.6.3/web/jsonlint.js"></script>
+        <script src="https://unpkg.com/csslint@1.0.5/dist/csslint.js"></script>
+        <script src="lib/codemirror/addon/lint/lint.js"></script>
+        <script src="lib/codemirror/addon/lint/css-lint.js"></script>
+        <script src="lib/codemirror/addon/lint/javascript-lint.js"></script>
+        <script src="lib/codemirror/addon/lint/json-lint.js"></script>
+        
+        <script src="lib/codemirror/addon/dialog/dialog.js"></script>
+        <script src="lib/codemirror/addon/search/searchcursor.js"></script>
+        <script src="lib/codemirror/addon/search/search.js"></script>
+        <script src="lib/codemirror/addon/scroll/annotatescrollbar.js"></script>
+        <script src="lib/codemirror/addon/search/matchesonscrollbar.js"></script>
+        <script src="lib/codemirror/addon/search/jump-to-line.js"></script>        
+
+        <script src="lib/jsPopupBox.js"></script>
+        <script src="lib/index.js"></script>
+    </body>
+</html>
