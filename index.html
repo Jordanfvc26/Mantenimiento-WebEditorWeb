@@ -89,36 +89,37 @@ WebEditorWeb
                 <table width="100%" cellspacing="0" cellpadding="0">
                     <tr>
                         <td style="text-align:left;">
-                            <button onclick="wew.newHTML();" title="New file (Ctrl+Alt+N)">
-                                <img id="wew_newImg" src="img/Page-White.png" alt="New" draggable="false" class="wew_ImgMenu"/>
+                            <button onclick="wew.newHTML();" title="Nuevo Archivo (Ctrl+Alt+N)">
+                                <img id="wew_newImg" src="img/icon-new-file.png" alt="New" draggable="false" class="wew_ImgMenu"/>
                             </button>
-                            <button onclick="document.querySelector('#wew_OpenFile').click()" title="Open file (Ctrl+O)">
-                                <img src="img/Folder.png" alt="Open" draggable="false" class="wew_ImgMenu"/>
+                            <button onclick="document.querySelector('#wew_OpenFile').click()" title="Abrir Archivo (Ctrl+O)">
+                                <img src="img/icon-open-file.png" alt="Open" draggable="false" class="wew_ImgMenu"/>
                             </button>
                             <input id="wew_OpenFile" type="file" onchange="wew.openHTML()" accept=".html,.js,.css,.xml,.json,.txt" hidden/>
-                            <button onclick="wew.saveHTML();" title="Save file (Ctrl+S)">
-                                <img id="wew_saveImg" src="img/Disk.png" alt="Save" draggable="false" class="wew_ImgMenu"/>
+                            <button onclick="wew.saveHTML();" title="Guardar Archivo (Ctrl+S)">
+                                <img id="wew_saveImg" src="img/icon-save-file.png" alt="Save" draggable="false" class="wew_ImgMenu"/>
+                            </button>
+                            <button onclick="wew.formatCode()" title="Formatear código (Alt+Shift+F)">
+                                <img src="img/Page-White-Lightning.png" alt="Format code" draggable="false" class="wew_ImgMenu"/>
                             </button>
                             &nbsp;
                         </td>
                         <td style="text-align:center;">
-                            <button onclick="wew.openRenameDialog();" id="wew_Filename" title="Rename file (F2)"></button>
-                            <button onclick="wew.formatCode()" title="Format selected code (Alt+Shift+F)">
-                                <img src="img/Page-White-Lightning.png" alt="Format code" draggable="false" class="wew_ImgMenu"/>
-                            </button>
-                            <button onclick="wew.runHTML();" id="wew_ButtonRun" title="Run HTML code (F9)">
-                                <img src="img/Run.png" alt="Run" draggable="false" class="wew_ImgMenu"/>
+                            <button onclick="wew.openRenameDialog();" id="wew_Filename" title="Renombrar archivo (F2)"></button>
+                            
+                            <button onclick="wew.runHTML();" id="wew_ButtonRun" title="Ejecutar el código (F9)">
+                                <img src="img/icon-run-file.webp" alt="Run" draggable="false" class="wew_ImgMenu"/>
                             </button>
                         </td>
                         <td style="text-align:right;">
                             &nbsp;
-                            <button onclick="wew.openConfigDialog();" title="Options (F9)">
+                            <button onclick="wew.openConfigDialog();" title="Configuración (F9)">
                                 <img id="wew_configImg" src="img/Cog.png" alt="Config" draggable="false" class="wew_ImgMenu"/>
                             </button>
-                            <button onclick="wew.openHelpDialog();" title="Help (F1)">
+                            <button onclick="wew.openHelpDialog();" title="Ayuda (F1)">
                                 <img id="wew_helpImg" src="img/Help.png" alt="Help" draggable="false" class="wew_ImgMenu"/>
                             </button>
-                            <button onclick="wew.openAboutDialog();" title="About">
+                            <button onclick="wew.openAboutDialog();" title="Información">
                                 <img src="img/Information.png" alt="About" draggable="false" class="wew_ImgMenu"/>
                             </button>
                             &nbsp;
