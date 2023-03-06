@@ -10,7 +10,7 @@ WebEditorWeb
         <meta name="keywords" content="wew, web editor web, code editor, soluc.org, soluc"/>
         <meta name="description" content="WEW - Web Editor Web - SoLUC.org"/>
         
-        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1183/1183620.png" type="image/x-icon">
+        <link href="img/wew.png" rel="shortcut icon"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
         <link href="lib/codemirror/lib/codemirror.css" rel="stylesheet" type="text/css"/>
@@ -83,7 +83,9 @@ WebEditorWeb
     <body>
         <div id="wew">
             <!-- Button Menu -->
-            <button id="wew_ButtonMenu" onclick="wew.showMenu();" title="Show menu (F10)">◂</button>
+            <button id="wew_ButtonMenu" onclick="wew.showMenu();" title="Mostrar menu (F10)">
+                <img src="img/Icon-menu.png" alt="About" draggable="false" class="wew_ImgMenu"/>
+            </button>
             <!-- Menu -->
             <div id="wew_Menu" onclick="wew.editor.focus();">
                 <table width="100%" cellspacing="0" cellpadding="0">
@@ -123,7 +125,9 @@ WebEditorWeb
                                 <img src="img/Information.png" alt="About" draggable="false" class="wew_ImgMenu"/>
                             </button>
                             &nbsp;
-                            <button id="wew_ButtonHideMenu" onclick="wew.hideMenu();" title="Hide menu (F10)">▸</button>
+                            <button id="wew_ButtonHideMenu" onclick="wew.hideMenu();" title="Ocultar (F10)">
+                                <img src="img/Icon-menu.png" alt="About" draggable="false" class="wew_ImgMenu"/>
+                            </button>
                         </td>
                     </tr>
                 </table>
